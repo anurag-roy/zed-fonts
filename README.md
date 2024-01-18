@@ -1,3 +1,7 @@
+This is a fork of [Zed Mono](https://github.com/zed-industries/zed-fonts) with `fixed` spacing which makes it usable on the terminal and solves some of the weird glyph overlapping issues.
+
+---
+
 # Zed Fonts
 **Zed Mono** & **Zed Sans** are custom builds of [Iosevka](https://github.com/be5invis/Iosevka) liscensed under the SIL Open Font License, Version 1.1.
 

@@ -7,9 +7,10 @@
 
 [buildPlans.zed-mono]
 family = "Zed Mono"
-spacing = "normal"
+spacing = "fixed"
 serifs = "sans"
-no-cv-ss = false
+noCvSs = true
+exportGlyphNames = false
 
   [buildPlans.zed-mono.variants]
   inherits = "ss08"
@@ -116,3 +117,4 @@ no-cv-ss = false
     percent = "rings-continuous-slash"
     bar = "force-upright"
     question = "corner"
+    
