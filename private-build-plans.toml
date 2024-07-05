@@ -2,156 +2,224 @@
 # This build plan contains multiple fonts, be careful not to
 # overwrite multiple when changing the configuration of one.
 
-# Zed Mono
-# To build: npm run build -- ttf-unhinted::zed-mono
+# Zed Mono Term
+# To build: npm run build -- ttf-unhinted::ZedMonoTerm
 
-[buildPlans.zed-mono]
-family = "Zed Mono"
+[buildPlans.ZedMonoTerm]
+family = "Zed Mono Term"
 spacing = "fixed"
 serifs = "sans"
 noCvSs = true
 exportGlyphNames = false
 
-  [buildPlans.zed-mono.variants]
-  inherits = "ss08"
+[buildPlans.ZedMonoTerm.variants]
+inherits = "ss08"
 
-    [buildPlans.zed-mono.variants.design]
-    capital-n = "standard"
-    capital-w = "curly"
-    capital-x = "straight-serifless"
-    g = "double-storey"
-    x = "curly-serifless"
-    y = "straight-turn"
-    eszet = "sulzbacher-descending"
-    zero = "slashed"
-    four = "semi-open"
-    five = "vertical-upper-left-bar"
-    seven = "straight-serifed"
-    eight = "two-circles"
-    nine = "straight-bar"
-    asterisk = "penta-high"
-    underscore = "above-baseline"
-    caret = "medium"
-    paren = "normal"
-    brace = "curly"
-    number-sign = "slanted"
-    ampersand = "closed"
-    dollar = "open"
-    percent = "rings-continuous-slash"
-    bar = "force-upright"
-    question = "corner"
+[buildPlans.ZedMonoTerm.variants.design]
+capital-n = "standard"
+capital-w = "curly"
+capital-x = "straight-serifless"
+g = "double-storey"
+x = "curly-serifless"
+y = "straight-turn"
+eszet = "sulzbacher-descending"
+zero = "slashed"
+four = "semi-open"
+five = "vertical-upper-left-bar"
+seven = "straight-serifed"
+eight = "two-circles"
+nine = "straight-bar"
+asterisk = "penta-high"
+underscore = "above-baseline"
+caret = "medium"
+paren = "normal"
+brace = "curly"
+number-sign = "slanted"
+ampersand = "closed"
+dollar = "open"
+percent = "rings-continuous-slash"
+bar = "force-upright"
+question = "corner"
 
-[buildPlans.zed-mono.weights.Regular]
+[buildPlans.ZedMonoTerm.weights.Regular]
 shape = 400
 menu = 400
 css = 400
 
-[buildPlans.zed-mono.weights.Medium]
+[buildPlans.ZedMonoTerm.weights.Medium]
 shape = 500
 menu = 500
 css = 500
 
-[buildPlans.zed-mono.weights.Bold]
+[buildPlans.ZedMonoTerm.weights.SemiBold]
+shape = 600
+menu = 600
+css = 600
+
+[buildPlans.ZedMonoTerm.weights.Bold]
 shape = 700
 menu = 700
 css = 700
 
-[buildPlans.zed-mono.widths.Normal]
+[buildPlans.ZedMonoTerm.widths.Normal]
 shape = 500
 menu = 5
 css = "normal"
 
-[buildPlans.zed-mono.widths.SemiExtended]
+[buildPlans.ZedMonoTerm.widths.SemiExtended]
 shape = 548
 menu = 6
 css = "semi-expanded"
 
-[buildPlans.zed-mono.slopes.Upright]
+[buildPlans.ZedMonoTerm.slopes.Upright]
 angle = 0
 shape = "upright"
 menu = "upright"
 css = "normal"
 
-[buildPlans.zed-mono.slopes.Italic]
+[buildPlans.ZedMonoTerm.slopes.Italic]
 angle = 9.4
 shape = "italic"
 menu = "italic"
 css = "italic"
 
-# Zed Mono NL (Zed Mono No Ligatures)
-# To build: npm run build -- ttf-unhinted::zed-mono-nl
+# Zed Mono (Zed Mono)
+# To build: npm run build -- ttf-unhinted::ZedMono
 
-[buildPlans.zed-mono-nl]
-family = "Zed Mono NL"
+[buildPlans.ZedMono]
+family = "Zed Mono"
 spacing = "normal"
 serifs = "sans"
 no-cv-ss = false
 no-ligation = true
 
-  [buildPlans.zed-mono-nl.variants]
-  inherits = "ss08"
+[buildPlans.ZedMono.variants]
+inherits = "ss08"
 
-    [buildPlans.zed-mono-nl.variants.design]
-    capital-n = "standard"
-    capital-w = "curly"
-    capital-x = "straight-serifless"
-    g = "double-storey"
-    x = "curly-serifless"
-    y = "straight-turn"
-    eszet = "sulzbacher-descending"
-    zero = "slashed"
-    four = "semi-open"
-    five = "vertical-upper-left-bar"
-    seven = "straight-serifed"
-    eight = "two-circles"
-    nine = "straight-bar"
-    asterisk = "penta-high"
-    underscore = "above-baseline"
-    caret = "medium"
-    paren = "normal"
-    brace = "curly"
-    number-sign = "slanted"
-    ampersand = "closed"
-    dollar = "open"
-    percent = "rings-continuous-slash"
-    bar = "force-upright"
-    question = "corner"
+[buildPlans.ZedMono.variants.design]
+capital-n = "standard"
+capital-w = "curly"
+capital-x = "straight-serifless"
+g = "double-storey"
+x = "curly-serifless"
+y = "straight-turn"
+eszet = "sulzbacher-descending"
+zero = "slashed"
+four = "semi-open"
+five = "vertical-upper-left-bar"
+seven = "straight-serifed"
+eight = "two-circles"
+nine = "straight-bar"
+asterisk = "penta-high"
+underscore = "above-baseline"
+caret = "medium"
+paren = "normal"
+brace = "curly"
+number-sign = "slanted"
+ampersand = "closed"
+dollar = "open"
+percent = "rings-continuous-slash"
+bar = "force-upright"
+question = "corner"
+
+[buildPlans.ZedMono.weights.Regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.ZedMono.weights.Medium]
+shape = 500
+menu = 500
+css = 500
+
+[buildPlans.ZedMono.weights.SemiBold]
+shape = 600
+menu = 600
+css = 600
+
+[buildPlans.ZedMono.weights.Bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.ZedMono.widths.Normal]
+shape = 500
+menu = 5
+css = "normal"
+
+[buildPlans.ZedMono.widths.SemiExtended]
+shape = 548
+menu = 6
+css = "semi-expanded"
+
+[buildPlans.ZedMono.slopes.Upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.ZedMono.slopes.Italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
 
 # Zed Sans
-# To build: npm run build -- ttf-unhinted::zed-sans
+# To build: npm run build -- ttf-unhinted::ZedSans
 
-[buildPlans.zed-sans]
+[buildPlans.ZedSans]
 family = "Zed Sans"
 spacing = "quasi-proportional"
 serifs = "sans"
 no-cv-ss = false
 
-  [buildPlans.zed-sans.variants]
-  inherits = "ss08"
+[buildPlans.ZedSans.variants]
+inherits = "ss08"
 
-    [buildPlans.zed-sans.variants.design]
-    capital-n = "standard"
-    capital-w = "curly"
-    capital-x = "straight-serifless"
-    g = "double-storey"
-    x = "curly-serifless"
-    y = "straight-turn"
-    eszet = "sulzbacher-descending"
-    zero = "slashed"
-    four = "semi-open"
-    five = "vertical-upper-left-bar"
-    seven = "straight-serifed"
-    eight = "two-circles"
-    nine = "straight-bar"
-    asterisk = "penta-high"
-    underscore = "above-baseline"
-    caret = "medium"
-    paren = "normal"
-    brace = "curly"
-    number-sign = "slanted"
-    ampersand = "closed"
-    dollar = "open"
-    percent = "rings-continuous-slash"
-    bar = "force-upright"
-    question = "corner"
-    
+[buildPlans.ZedSans.variants.design]
+capital-n = "standard"
+capital-w = "curly"
+capital-x = "straight-serifless"
+g = "double-storey"
+x = "curly-serifless"
+y = "straight-turn"
+eszet = "sulzbacher-descending"
+zero = "slashed"
+four = "semi-open"
+five = "vertical-upper-left-bar"
+seven = "straight-serifed"
+eight = "two-circles"
+nine = "straight-bar"
+asterisk = "penta-high"
+underscore = "above-baseline"
+caret = "medium"
+paren = "normal"
+brace = "curly"
+number-sign = "slanted"
+ampersand = "closed"
+dollar = "open"
+percent = "rings-continuous-slash"
+bar = "force-upright"
+question = "corner"
+
+[buildPlans.ZedSans.widths.Normal]
+shape = 500
+menu = 5
+css = "normal"
+
+[buildPlans.ZedSans.widths.SemiExtended]
+shape = 548
+menu = 6
+css = "semi-expanded"
+
+[buildPlans.ZedSans.slopes.Upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.ZedSans.slopes.Italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
